@@ -63,3 +63,6 @@ typings/
 .next
 
 .idea
+
+index.bundle.js
+.rpt2_cache

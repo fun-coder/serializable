@@ -1,9 +1,13 @@
-export const getSerializeKeys = (() => {
-  const map = new Map<string, string[]>();
-  return constructor => {
-    if (!map.get(constructor)) {
-      map.set(constructor, []);
-    }
-    return map.get(constructor);
+const serializedKey = Symbol("serializable");
+
+export const getSerializeKeys = constructor => {
+  if (!constructor[serializedKey]) {
+    constructor[serializedKey] = [];
   }
-})();
+  return constructor[serializedKey];
+};
+
+export const isSerializable = value => {
+  if (value == undefined || value == null) return false;
+  return !!value.constructor[serializedKey];
+};

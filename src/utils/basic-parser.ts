@@ -10,6 +10,8 @@ const parseMap = new Map();
 parseMap.set(String, value => value.toString());
 parseMap.set(Number, Number);
 parseMap.set(Boolean, parseBoolean);
+parseMap.set(undefined, value => value);
+parseMap.set(null, value => value);
 
 export const isBasicType = value => parseMap.has(value.constructor);
 

@@ -4,7 +4,8 @@
   "description": "Json to Object",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require ts-node/register --recursive ./test/*.spec.ts"
+    "test": "mocha --require ts-node/register --recursive ./test/*.spec.ts",
+    "build": "rollup -c ./rollup.config.js"
   },
   "author": "li-qiang",
   "license": "ISC",
@@ -18,6 +19,9 @@
     "@types/node": "^9.4.6",
     "chai": "^4.1.2",
     "mocha": "^5.0.1",
+    "rollup": "^0.56.3",
+    "rollup-plugin-typescript2": "^0.11.1",
+    "rollup-plugin-uglify": "^3.0.0",
     "ts-node": "^5.0.0"
   },
   "dependencies": {
