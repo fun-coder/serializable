@@ -11,6 +11,10 @@ class Name {
 
   @json('last_name')
   lastName: string;
+
+  public toString(): string {
+    return `${this.firstName} ${this.lastName}`;
+  }
 }
 
 @serializable
@@ -32,7 +36,7 @@ export class User {
   public isActive: boolean;
 
   public sayHello() {
-    return 'Hello';
+    return `Hello I'm ${this.userName}`;
   }
 }
 

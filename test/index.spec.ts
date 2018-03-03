@@ -12,11 +12,12 @@ describe('Serialize the object by json', () => {
 
   it('should be true', async () => {
     const user = User.serialize(json);
-    user.sayHello();
+
     expect(user.userName.firstName).to.eq('Hello');
     expect(user.userName.lastName).to.eq('world');
     expect(user.age).to.eq(22);
     expect(user.gender).to.eq(0);
+    expect(user.sayHello()).to.eq('Hello I\'m Hello world');
   });
 
   it('should deserialize to json', async () => {
