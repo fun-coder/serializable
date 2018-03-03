@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import { serialize } from "./serialize";
 import { deserialize } from "./deserialize";
 import { getSerializeKeys } from "./serialize-keys";

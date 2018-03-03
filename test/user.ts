@@ -1,4 +1,3 @@
-import "reflect-metadata";
 import { json, serializable } from "../index";
 
 @serializable
