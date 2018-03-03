@@ -2,7 +2,7 @@
   "name": "serializable",
   "version": "0.0.1",
   "description": "Json to Object",
-  "main": "index.js",
+  "main": "index.bundle.js",
   "scripts": {
     "test": "mocha --require ts-node/register --recursive ./test/*.spec.ts",
     "build": "rollup -c ./rollup.config.js"
