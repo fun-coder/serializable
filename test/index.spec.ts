@@ -17,7 +17,6 @@ describe('Serialize the object by json', () => {
     expect(user.userName.lastName).to.eq('world');
     expect(user.age).to.eq(22);
     expect(user.gender).to.eq(0);
-    expect(user.isActive).to.eq(false);
   });
 
   it('should deserialize to json', async () => {

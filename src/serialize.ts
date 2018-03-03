@@ -1,6 +1,5 @@
 import { getParser } from "./utils/basic-parser";
 import { getSerializeKeys, isSerializable } from "./serialize-keys";
-import { json } from "./serializable";
 
 const parseWithType = (type, value) => {
   const parser = getParser(type);
