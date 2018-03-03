@@ -1,5 +1,5 @@
 {
-  "name": "serializable",
+  "name": "@qlee/serializable",
   "version": "0.0.1",
   "description": "Json to Object",
   "main": "index.bundle.js",
@@ -12,6 +12,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/fun-coder/serializable.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
     "@types/chai": "^4.1.2",
