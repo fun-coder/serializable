@@ -1,6 +1,6 @@
 {
   "name": "@qlee/serializable",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Json to Object",
   "main": "index.bundle.js",
   "scripts": {
