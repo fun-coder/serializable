@@ -1,5 +1,7 @@
-serializable
+serializable  
 ---
+
+[![Build Status](https://travis-ci.org/fun-coder/serializable.svg?branch=master)](https://travis-ci.org/fun-coder/serializable)
 
 Basic serialize
 
